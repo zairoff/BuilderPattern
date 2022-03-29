@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Builder
 {
-    public abstract class ReportBuilder<T> where T : class
+    public abstract class ReportBuilder<T> 
     {
         protected readonly T _obj;
 
@@ -23,7 +23,7 @@ namespace Builder
 
         public abstract void SetFooter();
 
-        public void CreateReport()
+        public void CreatReport()
         {
             _report = new Report();
         }
