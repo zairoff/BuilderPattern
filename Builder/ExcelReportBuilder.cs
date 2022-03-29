@@ -17,17 +17,17 @@ namespace Builder
 
         public override void SetContent()
         {
-            _report.Content = "This is excel content";
+            _report.Content = $"This is excel content {_obj.ID}";
         }
 
         public override void SetFooter()
         {
-            _report.Footer = "This is excel footer";
+            _report.Footer = $"This is excel footer {_obj.Address}";
         }
 
         public override void SetHeader()
         {
-            _report.Header = "This is excel header";
+            _report.Header = $"This is excel header {_obj.Department}";
         }
     }
 }
